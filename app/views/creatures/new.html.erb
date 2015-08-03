@@ -1,0 +1,18 @@
+<%= form_for @creature do |f| %>
+<center>
+<h1>Make A New Creature</h1>
+	
+	name: <%= f.text_field :name %> <br>
+	description: <%= f.text_area :description %> <br>
+	<%= f.submit "save creature" %> <br>
+</center>
+<% end %>
+
+
+
+<!-- <form class="form-horizontal center" role="form">
+       	<%= form_for @creature do |f| %>
+          # <%= f.text_field :name, class: "form-control" %><br>
+          # <%= f.text_area :description, class: "form-control" %><br>
+          # <%= f.submit "Update Creature", class:"btn btn-default" %><br>
+        <% end %> -->
